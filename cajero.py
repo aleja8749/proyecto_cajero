@@ -4,6 +4,7 @@ Created on Wed Mar 26 19:19:22 2025
 
 @author: LENOVO
 """
+
 import numpy as np
  
  
@@ -48,11 +49,12 @@ for enu, i_name in enumerate(lista_nombres):
     str_nombre = str_nombre + f'\n{enu}: ' + i_name
  
  
-# 
+## 
 
 while True:
 
     try:
+        
 
         seleccion = int(input(f'¿Usted quién es?: {str_nombre}\n105: SALIR\n'))
 
@@ -72,7 +74,7 @@ while True:
     if seleccion in range(len(lista_nombres)):
 
         while True:
-           try:
+
             operaciones = int(input('¿Qué quiere hacer?:\n0: Ver\n1: Retirar\n2: Consignar\n3: SALIR\n'))
 
             saldo_cuenta_usuario = dict_users[seleccion_cliente]
@@ -117,3 +119,4 @@ while True:
 
         print('Error: no seleccionó una opción válida')
  
+print('rama alternativo')
